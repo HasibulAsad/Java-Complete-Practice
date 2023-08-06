@@ -5,16 +5,15 @@ public class Problem16 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number : ");
         long number = scanner.nextLong();
-        System.out.println("The sum of Digit is : "+sumofDigits(number));
+        System.out.println("The sum of Digit is : " + sumofDigits(number));
 
     }
 
-    public static long sumofDigits(long number){
+    public static long sumofDigits(long number) {
         long sum = 0;
-        while (number != 0)
-        {
-            sum = sum +(number % 10);
-            number = number/10;
+        while (number != 0) {
+            sum = sum + (number % 10);
+            number = number / 10;
         }
         return sum;
     }
